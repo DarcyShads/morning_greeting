@@ -1,0 +1,30 @@
+{
+  "name": "morning_greet",
+  "version": "1.0.0",
+  "description": "sends the necessary information to the user in the morning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarcyShads/morning_greeting.git"
+  },
+  "keywords": [
+    "greeting",
+    "automation",
+    "morning",
+    "weather"
+  ],
+  "author": "prabhat malhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarcyShads/morning_greeting/issues"
+  },
+  "homepage": "https://github.com/DarcyShads/morning_greeting#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.8"
+  }
+}
