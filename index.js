@@ -5,7 +5,7 @@ import schedule from "node-schedule";
 import fs from "fs";
 import moment from "moment";
 
-const port = process.port || 3000;
+const port = process.env.PORT || 3000;
 const app = Express();
 app.listen(port, () => {
   console.log(`Listening at port ${port}`);
