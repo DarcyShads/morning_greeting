@@ -1,0 +1,51 @@
+{
+  "weather": {
+    "headline": "Thunderstorms in the area late Monday night through Friday evening",
+    "min": 25.56,
+    "max": 35.56,
+    "unit": "°C",
+    "day": { "icon": 16, "icophrase": "Mostly cloudy w/ t-storms" },
+    "night": { "icon": 41, "icophrase": "Partly cloudy w/ t-storms" }
+  },
+  "astronomy": {
+    "sunrise": "2022-07-16T23:58:13+00:00",
+    "sunset": "2022-07-17T13:52:02+00:00",
+    "moonrise": "2022-07-16T16:18:58+00:00",
+    "moonset": "2022-07-16T02:31:21+00:00",
+    "moonphase": "Waning gibbous"
+  },
+  "news": [
+    {
+      "title": "Coronavirus live updates | Schools in Rajasthan to reopen from August 2",
+      "description": "More than half of all European adults are now fully vaccinated, the EU said on Thursday, as countries across Europe and Asia battled fresh outbreaks blamed on the fast-spreading Delta variant.",
+      "url": "https://www.thehindu.com/news/national/coronavirus-live-july-23-2021-updates/article35481907.ece",
+      "img": "https://www.thehindu.com/news/national/andhra-pradesh/itrjr2/article35457972.ece/ALTERNATES/LANDSCAPE_615/22vjcovid"
+    },
+    {
+      "title": "Parliament proceedings updates | Govt. to move motion seeking suspension of TMC MP today",
+      "description": "The proceedings of both the Houses of Parliament remained paralysed in the first four days of Monsoon session as Opposition members protested over a number of issues including the Pegasus snooping con",
+      "url": "https://www.thehindu.com/news/national/parliament-proceedings-live-july-23-2021/article35481906.ece",
+      "img": "https://www.thehindu.com/news/national/yfzd3o/article34559558.ece/ALTERNATES/LANDSCAPE_615/ParliamentHouse"
+    },
+    {
+      "title": "Tokyo Olympics | Deepika ninth in ranking round; Koreans top-two",
+      "description": "The performances will determine the seedings for the elimination rounds.",
+      "url": "https://www.thehindu.com/sport/tokyo-olympics-deepika-ninth-in-ranking-round-koreans-top-two/article35481902.ece",
+      "img": "https://www.thehindu.com/sport/uvmmr0/article35481908.ece/ALTERNATES/LANDSCAPE_615/thnak1330128994jpg"
+    },
+    {
+      "title": "Xi Jinping visits Tibet border region, first by Chinese leader in years",
+      "description": "He inspects newly opened and strategically important railway line",
+      "url": "https://www.thehindu.com/news/international/xi-jinping-visits-tibet-border-region-first-by-chinese-leader-in-years/article35481755.ece",
+      "img": "https://www.thehindu.com/news/international/nowz13/article34617350.ece/ALTERNATES/LANDSCAPE_615/ChinaTwitterFakeFans83865jpg-f58f3jpg"
+    },
+    {
+      "title": "Six Ministers huddle with Yediyurappa, but say they will abide by party decision",
+      "description": "They had played a key role in bringing BJP to power",
+      "url": "https://www.thehindu.com/news/national/karnataka/six-ministers-huddle-with-yediyurappa-but-say-they-will-abide-by-party-decision/article35480182.ece",
+      "img": "https://www.thehindu.com/news/national/karnataka/n1n7mn/article35480181.ece/ALTERNATES/LANDSCAPE_615/23bgbsycabinet1"
+    }
+  ],
+  "quote": "The highest form of ignorance is when you reject something you don't know anything about. ",
+  "lastUpdate": "07_16_2022-85135"
+}
