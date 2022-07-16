@@ -140,7 +140,7 @@ async function getAstro() {
 
 async function saveNewsData() {
   const news = await getNews();
-  const lastUpdate = moment().format("MM_D_YYYY-Hmmss");
+  const lastUpdate = moment().format("D-MM-YYYY H:mm:ss");
   const dataFile = fs.readFileSync("data.json");
   const data = JSON.parse(dataFile);
   data.news = news;
@@ -154,13 +154,28 @@ async function saveData() {
   const news = await getNews();
   const weather = await getWeather();
   const astronomy = await getAstro();
-  const lastUpdate = moment().format("MM_D_YYYY-Hmmss");
+  const lastUpdate = moment().format("D-MM-YYYY H:mm:ss");
   const data = { weather, astronomy, news, quote, lastUpdate };
   fs.writeFileSync("data.json", JSON.stringify(data));
   console.log("Data saved");
 }
 
+function getResetStat() {
+  const dataFile = fs.readFileSync("data.json");
+  const data = JSON.parse(dataFile);
+  const update = data.lastUpdate.split(" ");
+  const [dd, mm, yyyy] = update[0].split("-");
+  const [hh, m, ss] = update[1].split(":");
+  const dx = new Date(yyyy, mm - 1, dd, hh, m, ss);
+  const t = (Date.now() - Date.parse(dx)) / 1000 / 60 / 60;
+  return t > 12 ? "all" : t > 4 ? "news" : "none";
+}
+
 app.get("/info", async (req, res) => {
+  const reset = getResetStat();
+  if (reset == "all") saveData();
+  else if (reset == "news") saveNewsData();
+
   const dataFile = fs.readFileSync("data.json");
   const data = JSON.parse(dataFile);
   res.send(data);
