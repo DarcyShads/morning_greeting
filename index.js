@@ -185,8 +185,7 @@ app.get("/info", async (req, res) => {
 
 const rule4h = new schedule.RecurrenceRule();
 rule4h.dayOfWeek = [0, 6];
-rule4h.hour = [4, 8, 12, 16, 20];
-rule4h.minute = 10;
+rule4h.hour = [4,5, 8, 12, 16, 20];
 const newsJob = schedule.scheduleJob(rule4h, saveNewsData);
 newsJob.tz = "Asia/Kolkata";
 
