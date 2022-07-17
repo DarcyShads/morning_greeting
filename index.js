@@ -168,18 +168,16 @@ function getResetStat() {
   const [hh, m, ss] = update[1].split(":");
   const dx = new Date(yyyy, mm - 1, dd, hh, m, ss);
   const t = (Date.now() - Date.parse(dx)) / 1000 / 60 / 60;
-//   return t > 12 ? "all" : t > 4 ? "news" : "none";
-  return {dx,t}
+  return t > 12 ? "all" : t > 4 ? "news" : "none";
 }
 
 app.get("/info", async (req, res) => {
   const reset = getResetStat();
-//   if (reset == "all") saveData();
-//   else if (reset == "news") saveNewsData();
+  if (reset == "all") saveData();
+  else if (reset == "news") saveNewsData();
 
   const dataFile = fs.readFileSync("data.json");
   const data = JSON.parse(dataFile);
-  data.reset = reset;
   res.send(data);
 });
 
