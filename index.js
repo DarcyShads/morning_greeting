@@ -29,7 +29,8 @@ function addParamtoURL(url, param) {
 async function getNews() {
   const news_endpoint = "https://newsapi.org/v2/top-headlines";
   const parameters = {
-    sources: "the-hindu",
+    country:"in",
+    category:"general",
   };
   const finalUrl = addParamtoURL(news_endpoint, parameters);
 
