@@ -46,7 +46,7 @@ async function getNews() {
   var count = 0;
   try {
     for (const article of data.articles) {
-      const title = article.title;
+      const title = article.title.split("-").slice(0, -1).join("-");
       const description = article.description;
       const url = article.url;
       const img = article.urlToImage;
